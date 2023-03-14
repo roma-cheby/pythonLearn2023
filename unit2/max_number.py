@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route('/max_number/<path:numbers>')
 def max_number(numbers):
     numbers = [int(s) for s in numbers.split('/') if s.isdigit()]
-    return f"Максимальное число: {max(numbers)}"
+    return f"Максимальное число: <i>{max(numbers)}<i>"
 
 if __name__ == '__main__':
     app.run()
