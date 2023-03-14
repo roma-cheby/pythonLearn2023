@@ -12,8 +12,6 @@ cats = ['корниш-рекс', 'русская голубая', 'шотлан�
 counts = 0
 book = get_book("war_and_peace.txt")
 
-
-
 @app.route('/hello_world')
 def hello_world():
     return "Привет, мир!"
