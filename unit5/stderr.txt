@@ -1,4 +1,4 @@
 Traceback (most recent call last):
-  File "H:\games\pythonLearn2023\unit5\redirect.py", line 19, in <module>
+  File "H:\games\pythonLearn2023\unit5\redirect.py", line 28, in <module>
     raise Exception('Hello stderr.txt')
 Exception: Hello stderr.txt
