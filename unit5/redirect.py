@@ -1,11 +1,13 @@
+import sys
+
 class Redirect():
-    def __init__(self, errors):
-        self.errors = errors
+    def __init__(self, stdout, stderr):
+        self.strout = stdout
+        self.stderr = stderr
     def __enter__(self):
-        return 1
+        sys.stdout = self.strout
     def __exit__(self, exc_type, exc_val, exc_tb):
-        if exc_type in self.errors or Exception in self.errors:
-            return 1
+        sys.stderr = self.stderr
 
 print('Hello stdout')
 stdout_file = open('stdout.txt', 'w')
