@@ -1,0 +1,12 @@
+{"time": "14:55:57", "level": "INFO", "message": ""Вы пытаетесь аутентифицироваться в SkillBox""}
+{"time": "14:55:57", "level": "INFO", "message": ""У вас есть 3 попыток""}
+{"time": "14:55:58", "level": "WARNING", "message": ""\"""}
+{"time": "14:55:58", "level": "WARNING", "message": ""\"""}
+{"time": "14:55:59", "level": "WARNING", "message": ""\"""}
+{"time": "14:55:59", "level": "ERROR", "message": ""Пользователь трижды ввёл неправильный пароль!""}
+{"time": "14:56:22", "level": "INFO", "message": "Вы пытаетесь аутентифицироваться в SkillBox"}
+{"time": "14:56:22", "level": "INFO", "message": "У вас есть 3 попыток"}
+{"time": "14:56:22", "level": "WARNING", "message": "\""}
+{"time": "14:56:22", "level": "WARNING", "message": "\""}
+{"time": "14:56:23", "level": "WARNING", "message": "\""}
+{"time": "14:56:23", "level": "ERROR", "message": "Пользователь трижды ввёл неправильный пароль!"}
