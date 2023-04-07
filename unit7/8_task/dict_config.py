@@ -12,9 +12,9 @@ dict_config = {
     "handlers": {
         "HTTP": {
             "class": "logging.handlers.HTTPHandler",
-            "host": "http://127.0.0.1:5000",
+            "host": "127.0.0.1:5000",
             "url": "/post_logs",
-            "formatter": "base"
+            "method": "POST"
         }
     },
     "loggers": {
