@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
-    <file url="PROJECT" charset="windows-1251" />
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/unit7/2_task.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/unit7/3_task/calc_error.log" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/unit7/3_task/calc_info.log" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/unit7/4_task/calc_error.log" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/unit7/4_task/calc_info.log" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/unit7/5_task/calculate.log" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/unit7/5_task/calculate.log.2023-04-05_16-47-51" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/unit7/5_task/calculate.log.2023-04-05_16-48-25" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/unit7/5_task/calculate.log.2023-04-05_16-51-52" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/unit7/5_task/calculate.log.2023-04-05_16-52-10" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/unit7/5_task/calculate.log.2023-04-05_17-24-28" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/unit7/7_task/calculate.log" charset="windows-1251" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
