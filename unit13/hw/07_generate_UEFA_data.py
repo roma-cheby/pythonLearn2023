@@ -57,7 +57,7 @@ def generate_test_data(c: sqlite3.Cursor, number_of_groups: int) -> None:
         commands.append((i * 4 + 2, f"{random.choice(letters)}{random.choice(letters)}{random.choice(letters)}", random.choice(countries), "средняя"))
         commands_draw.append((i * 4 + 2, i * 4 + 2, i + 1))
         commands.append((i * 4 + 3, f"{random.choice(letters)}{random.choice(letters)}{random.choice(letters)}", random.choice(countries), "слабая"))
-        commands_draw.append((i * 4 + 3, i * 4 + 3, i + 1)) 
+        commands_draw.append((i * 4 + 3, i * 4 + 3, i + 1))
 
     print(commands)
     c.executemany("INSERT INTO uefa_commands VALUES(?, ?, ?, ?)", commands)
