@@ -49,6 +49,15 @@ def pass_book_by_student():
     else:
         return f"Студент {student_id} не брал книгу {book_id}", 404
 
+@app.route('/search_books/<string:search_book>', methods=["GET"])
+def search_books(search_book):
+    books = Books.search_books(search_book)
+    books_as_dict = []
+    for book in books:
+        book_as_dict = book.to_json()
+        books_as_dict.append(book_as_dict)
+    return jsonify(books_as_dict), 200
+
 if __name__ == '__main__':
     app.config["DEBUG"] = True
     app.run()

@@ -22,6 +22,10 @@ class Books(Base):
     def get_all_books(cls):
         return session.query(Books).all()
 
+    @classmethod
+    def search_books(cls, search_book):
+        return session.query(Books).filter(Books.name.like("%" + search_book + "%"))
+
     def to_json(self):
         return {c.name: getattr(self, c.name) for c in
                 self.__table__.columns}
