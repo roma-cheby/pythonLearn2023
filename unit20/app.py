@@ -31,8 +31,8 @@ def get_debtors():
 def give_book_to_student():
     book_id = request.form.get('book_id', type=int)
     student_id = request.form.get('student_id', type=int)
-    receivingBooks = ReceivingBooks(book_id=book_id, student_id=student_id, date_of_issue = datetime.datetime.now())
-    session.add(receivingBooks)
+    receiving_book = ReceivingBooks(book_id=book_id, student_id=student_id, date_of_issue = datetime.datetime.now())
+    session.add(receiving_book)
     session.commit()
     return "Книга выдана", 201
 
@@ -41,7 +41,13 @@ def give_book_to_student():
 def pass_book_by_student():
     book_id = request.form.get('book_id', type=int)
     student_id = request.form.get('student_id', type=int)
-
+    receiving_book = session.query(ReceivingBooks).filter(ReceivingBooks.book_id == book_id, ReceivingBooks.student_id == student_id).one_or_none()
+    if receiving_book is not None:
+        receiving_book.date_of_return = datetime.datetime.now()
+        session.commit()
+        return "Книга сдана", 202
+    else:
+        return f"Студент {student_id} не брал книгу {book_id}", 404
 
 if __name__ == '__main__':
     app.config["DEBUG"] = True
