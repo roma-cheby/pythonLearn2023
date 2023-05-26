@@ -1,0 +1,8 @@
+UID        PID  PPID  C    SZ   RSS PSR STIME TTY          TIME CMD
+root         1     0  0   581  1512   9 20:54 ?        00:00:00 /init
+root         4     1  0   581     4   6 20:54 ?        00:00:00 plan9 --control-socket 5 --log-level 4 --server-fd 6 --pipe-fd 8 --log-truncate
+root         7     1  0   585   112   5 20:54 ?        00:00:00 /init
+root         8     7  0   585   120   5 20:54 ?        00:00:00 /init
+chebyrek     9     8  0 11716 45760   2 20:54 pts/0    00:00:00 -bash
+chebyrek    78     9  0  3705  9528   4 21:00 pts/0    00:00:00 python3 2_task.py
+chebyrek    80    78  0  1870  3172   9 21:00 pts/0    00:00:00 ps -eF

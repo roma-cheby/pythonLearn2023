@@ -2,7 +2,8 @@ import datetime
 
 from sqlalchemy import create_engine, Column, Integer, Text, Date, Float, Boolean, DateTime
 from sqlalchemy.ext.hybrid import hybrid_property
-from sqlalchemy.orm import sessionmaker, declarative_base
+from sqlalchemy.orm import sessionmaker, declarative_base, relationship, backref
+from sqlalchemy.ext.associationproxy import association_proxy
 
 engine = create_engine("sqlite:///database.db")
 Session = sessionmaker(bind=engine)
